@@ -1,1 +1,308 @@
-<!doctype html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#25483e"><meta name="description" content="ЧИСТО. — демонстрационный сайт современного сервиса уборки квартир и домов. Рассчитайте стоимость уборки онлайн."><title>ЧИСТО. — чистый дом, свободное время</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body><div class="demo">Демонстрационный проект для портфолио · Компания и отзывы вымышлены</div><header class="header"><div class="container nav"><a class="logo" href="#home">чисто<span>.</span></a><button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false">☰</button><nav id="nav"><a href="#services">Услуги</a><a href="#calculator">Стоимость</a><a href="#about">О нас</a><a href="#faq">Вопросы</a><a class="nav-cta" href="#contact">Оставить заявку ↗</a></nav></div></header><main><section class="hero" id="home"><div class="container hero-grid"><div class="hero-copy"><span class="eyebrow">КЛИНИНГ С ЗАБОТОЙ О ВАШЕМ ДОМЕ</span><h1>Чистый дом.<br><em>Свободное время.</em></h1><p>Профессиональная уборка квартир и домов. Мы берём заботы о чистоте на себя, чтобы у вас оставалось больше времени на важное.</p><div class="hero-actions"><a class="btn" href="#calculator">Рассчитать стоимость <span>↗</span></a><a class="text-link" href="#services">Наши услуги ↗</a></div><div class="hero-stats"><div><strong>4 вида</strong><span>уборки</span></div><div><strong>0 ₽</strong><span>скрытых доплат*</span></div><div><strong>100%</strong><span>внимания к деталям</span></div></div></div><div class="hero-visual"><img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1400&q=85" alt="Светлая уютная гостиная с современным интерьером"><div class="floating-note">✦ &nbsp; Дома хорошо, когда чисто</div></div></div></section><section class="section" id="services"><div class="container"><div class="section-head"><div><span class="eyebrow">ЧТО МЫ ДЕЛАЕМ</span><h2>Чистота под ваш <em>ритм жизни</em></h2></div><p>От регулярного поддержания порядка до тщательной уборки после ремонта.</p></div><div class="services-grid"><article class="service"><img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=900&q=80" alt="Специалист убирает комнату"><div class="service-content"><span>01 / ЕЖЕДНЕВНЫЙ КОМФОРТ</span><h3>Поддерживающая уборка</h3><p>Свежесть и порядок без хлопот.</p><div class="service-bottom"><strong>от 2 500 ₽</strong><a href="#calculator" aria-label="Рассчитать поддерживающую уборку">↗</a></div></div></article><article class="service"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80" alt="Чистый современный дом"><div class="service-content"><span>02 / ГЛУБОКАЯ ЧИСТОТА</span><h3>Генеральная уборка</h3><p>Особое внимание каждому уголку.</p><div class="service-bottom"><strong>от 4 500 ₽</strong><a href="#calculator" aria-label="Рассчитать генеральную уборку">↗</a></div></div></article><article class="service"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80" alt="Светлая квартира после ремонта"><div class="service-content"><span>03 / НОВОЕ НАЧАЛО</span><h3>После ремонта</h3><p>Уберём строительную пыль и следы работ.</p><div class="service-bottom"><strong>от 6 000 ₽</strong><a href="#calculator" aria-label="Рассчитать уборку после ремонта">↗</a></div></div></article><article class="service"><img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80" alt="Светлое помещение с большими окнами"><div class="service-content"><span>04 / БОЛЬШЕ СВЕТА</span><h3>Мойка окон</h3><p>Прозрачные стёкла и сияющие рамы.</p><div class="service-bottom"><strong>от 1 200 ₽</strong><a href="#calculator" aria-label="Рассчитать мойку окон">↗</a></div></div></article></div></div></section><section class="section calculator-section" id="calculator"><div class="container calc-layout"><div><span class="eyebrow">ПРОЗРАЧНЫЕ ЦЕНЫ</span><h2>Узнайте стоимость <em>за минуту</em></h2><p>Выберите параметры — калькулятор сразу покажет ориентировочную стоимость.</p><div class="calc-benefits"><span>✓ Без регистрации</span><span>✓ Мгновенный расчёт</span><span>✓ Никаких обязательств</span></div></div><div class="calc-card"><label for="type">Тип уборки</label><select id="type"><option value="regular">Поддерживающая</option><option value="deep">Генеральная</option><option value="repair">После ремонта</option><option value="windows">Мойка окон</option></select><div class="area-row"><label for="area">Площадь помещения</label><strong><output id="area-value">50</output> м²</strong></div><input id="area" type="range" min="20" max="200" value="50" step="5"><div class="range-labels"><span>20 м²</span><span>200 м²</span></div><p class="extra-label">Дополнительные услуги</p><label class="check"><input type="checkbox" value="700" class="extra"><span>Мытьё холодильника</span><b>+700 ₽</b></label><label class="check"><input type="checkbox" value="600" class="extra"><span>Мытьё духовки</span><b>+600 ₽</b></label><label class="check"><input type="checkbox" value="500" class="extra"><span>Внутри кухонных шкафов</span><b>+500 ₽</b></label><div class="total"><span>Предварительная стоимость</span><strong id="total-price" aria-live="polite">3 500 ₽</strong><small>* Примерные демонстрационные тарифы, не публичная оферта.</small></div><a class="btn full" href="#contact">Оставить заявку ↗</a></div></div></section><section class="section" id="about"><div class="container about-grid"><div class="about-photo"><img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1100&q=85" alt="Светлый интерьер с натуральными материалами"></div><div><span class="eyebrow">НАШ ПОДХОД</span><h2>Чистота, которую <em>чувствуешь</em></h2><p>Мы верим, что уборка — это не просто услуга, а возможность сделать повседневную жизнь легче и приятнее.</p><div class="features"><div><span>01</span><div><h3>Бережное отношение</h3><p>Внимание к поверхностям, вещам и деталям вашего дома.</p></div></div><div><span>02</span><div><h3>Понятные условия</h3><p>Согласовываем объём работ и стоимость заранее.</p></div></div><div><span>03</span><div><h3>Удобный график</h3><p>Выбирайте время, которое подходит именно вам.</p></div></div></div></div></div></section><section class="section comparison-section"><div class="container"><div class="section-head"><div><span class="eyebrow">ВИДИМЫЙ РЕЗУЛЬТАТ</span><h2>Разница <em>в деталях</em></h2></div><p>Передвигайте ползунок, чтобы увидеть принцип работы сравнения «до / после».</p></div><div class="comparison" id="comparison"><img class="after-img" src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1400&q=85" alt="Светлая гостиная после уборки"><div class="before-layer" id="before-layer"><img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1400&q=85" alt="Иллюстративное состояние до уборки"></div><span class="compare-tag before-tag">До*</span><span class="compare-tag after-tag">После*</span><div class="compare-line" id="compare-line"><span>↔</span></div><input type="range" id="compare-range" min="0" max="100" value="50" aria-label="Сравнить изображения до и после"></div><p class="disclaimer">* Демонстрация механики слайдера на одном изображении. Реальные фотографии работ клиент сможет добавить позже.</p></div></section><section class="section steps-section"><div class="container"><span class="eyebrow">ВСЁ ПРОСТО</span><h2>Четыре шага к <em>чистоте</em></h2><div class="steps"><div><span>01</span><h3>Заявка</h3><p>Вы оставляете контакты и рассказываете о задаче.</p></div><div><span>02</span><h3>Расчёт</h3><p>Уточняем детали и согласовываем стоимость.</p></div><div><span>03</span><h3>Уборка</h3><p>Специалисты приводят пространство в порядок.</p></div><div><span>04</span><h3>Результат</h3><p>Вы наслаждаетесь чистотой и свободным временем.</p></div></div></div></section><section class="section reviews-section"><div class="container"><span class="eyebrow">ПРИМЕР ОФОРМЛЕНИЯ ОТЗЫВОВ</span><h2>Тёплые слова <em>о чистоте</em></h2><div class="reviews"><blockquote>«Очень приятно возвращаться в дом, где всё на своих местах. Именно такой результат и хотелось получить.»<footer>Анна М. <span>· Демонстрационный отзыв</span></footer></blockquote><blockquote>«Понравилось, что всё понятно: какие работы входят в уборку и сколько это стоит.»<footer>Михаил К. <span>· Демонстрационный отзыв</span></footer></blockquote><blockquote>«Удобный сервис, приятный дизайн и быстрый расчёт — именно то, что нужно занятому человеку.»<footer>Елена С. <span>· Демонстрационный отзыв</span></footer></blockquote></div></div></section><section class="section faq-section" id="faq"><div class="container faq-grid"><div><span class="eyebrow">ЧАСТЫЕ ВОПРОСЫ</span><h2>Ответы на <em>важное</em></h2><p>Всё, что стоит знать перед заказом уборки.</p></div><div class="faq-items"><details><summary>Нужно ли предоставлять средства для уборки?</summary><p>В демонстрационной модели предполагается, что специалисты приезжают со своими средствами и инвентарём.</p></details><details><summary>Как рассчитывается окончательная цена?</summary><p>Стоимость зависит от площади, вида уборки и дополнительных услуг. Итоговая сумма согласовывается до начала работ.</p></details><details><summary>Можно ли заказать уборку на выходные?</summary><p>Да, в примере сервиса предусмотрена запись на удобный день, включая выходные.</p></details><details><summary>Нужно ли присутствовать во время уборки?</summary><p>Условия доступа к помещению согласовываются индивидуально.</p></details></div></div></section><section class="contact-section" id="contact"><div class="container contact-grid"><div><span class="eyebrow">ВАШ ДОМ ЗАСЛУЖИВАЕТ ЗАБОТЫ</span><h2>Пусть дома будет <em>легко дышать</em></h2><p>Оставьте заявку — мы покажем, как выглядит удобный процесс оформления заказа.</p><div class="contact-footnote">Демонстрационный сайт · Контактные данные не передаются компании</div></div><form id="contact-form" novalidate><label for="name">Ваше имя</label><input id="name" name="name" required minlength="2" placeholder="Как к вам обращаться?"><label for="phone">Телефон или email</label><input id="phone" name="contact" required placeholder="Контакт для связи"><label for="message">Комментарий</label><textarea id="message" name="message" rows="3" placeholder="Расскажите, какая уборка вам нужна"></textarea><button class="btn full" type="submit">Отправить заявку ↗</button><p class="form-message" id="form-message" role="status" aria-live="polite"></p><small>Демо-режим: форма проверяет данные, но не отправляет их на сервер.</small></form></div></section></main><footer class="footer"><div class="container footer-inner"><a class="logo" href="#home">чисто<span>.</span></a><p>Демонстрационный проект веб-разработки · 2026</p><a href="#home">Наверх ↑</a></div></footer><script src="script.js" defer></script></body></html>
+<!doctype html>
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><meta content="#25483e" name="theme-color"/><meta content="ЧИСТО. — демонстрационный сайт современного сервиса уборки квартир и домов. Рассчитайте стоимость уборки онлайн." name="description"/><title>ЧИСТО. — чистый дом, свободное время</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/><meta content="ЧИСТО. — Чистый дом. Свободное время." property="og:title"/><meta content="Премиальный сервис уборки. Демонстрационный сайт с онлайн-калькулятором." property="og:description"/><meta content="website" property="og:type"/><meta content="light" name="color-scheme"/><link href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 rx=%2218%22 fill=%22%2325483e%22/%3E%3Cpath d=%22M17 43Q32 18 49 21Q42 41 17 43ZM24 45Q30 33 42 27%22 fill=%22%23b2d3bc%22 stroke=%22%23b2d3bc%22 stroke-width=%222%22/%3E%3C/svg%3E" rel="icon"/><style>:root{--green:#25483e;--mint:#dce9e1;--cream:#f7f6f1;--ink:#26332e;--muted:#68736d;--line:#e2e6df}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;font-family:Manrope,Arial,sans-serif;color:var(--ink);background:#fff}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}button,a,input,select,textarea{outline-offset:3px}img{display:block;width:100%;object-fit:cover}.container{max-width:1200px;margin:auto;padding:0 28px}.demo{padding:9px 16px;text-align:center;background:var(--green);color:#fff;font-size:11px;letter-spacing:.04em}.header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(15px);border-bottom:1px solid var(--line)}.nav{height:82px;display:flex;align-items:center;justify-content:space-between}.logo{font-size:32px;font-weight:800;letter-spacing:-2px;color:var(--green)}.logo span{color:#9cbaaa}nav{display:flex;align-items:center;gap:34px;font-size:13px;font-weight:700}nav a:hover,.text-link:hover{color:#6a9882}.nav-cta{background:var(--green);color:white;padding:14px 20px;border-radius:30px}.nav-cta:hover{color:white;background:#416f5e}.menu-toggle{display:none;border:0;background:none;font-size:28px;color:var(--green);cursor:pointer}.hero{background:var(--cream);overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.03fr .97fr;align-items:center;gap:42px;padding-top:70px;padding-bottom:78px}.eyebrow{font-size:11px;letter-spacing:.16em;font-weight:800;color:#648874}.hero h1{font-size:clamp(43px,5vw,73px);letter-spacing:-.065em;line-height:1.14;margin:25px 0}.hero h1 em,h2 em{font-style:normal;color:#729b86}.hero-copy>p{font-size:16px;line-height:1.9;max-width:510px;color:#68736d}.hero-actions{display:flex;align-items:center;gap:30px;margin-top:34px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:25px;padding:18px 25px;background:var(--green);border:0;color:white;border-radius:40px;font-size:13px;font-weight:800;cursor:pointer;transition:background .2s,transform .2s}.btn:hover{background:#416f5e;transform:translateY(-2px)}.text-link{font-weight:800;font-size:13px}.hero-stats{display:flex;gap:34px;margin-top:65px}.hero-stats div{display:flex;flex-direction:column;gap:4px}.hero-stats strong{font-size:22px}.hero-stats span{font-size:11px;color:var(--muted)}.hero-visual{position:relative}.hero-visual img{height:550px;border-radius:190px 190px 16px 16px}.floating-note{position:absolute;bottom:24px;left:-20px;background:white;padding:18px 22px;border-radius:12px;box-shadow:0 12px 35px #0001;font-size:13px;font-weight:700}.section{padding:110px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:42px}.section-head>div{max-width:680px}.section-head>p{max-width:310px;color:var(--muted);line-height:1.8;font-size:14px}h2{font-size:clamp(32px,4vw,52px);letter-spacing:-.055em;line-height:1.2;margin:17px 0 0}h3{letter-spacing:-.03em}.services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:19px}.service{border:1px solid var(--line);border-radius:18px;overflow:hidden;transition:transform .2s,box-shadow .2s}.service:hover{transform:translateY(-5px);box-shadow:0 14px 40px #183a2b12}.service img{height:205px}.service-content{padding:22px}.service-content>span{font-size:9px;letter-spacing:.08em;font-weight:800;color:#789483}.service h3{font-size:19px;min-height:52px;margin:13px 0}.service p{font-size:12px;color:var(--muted);min-height:42px;line-height:1.7}.service-bottom{display:flex;justify-content:space-between;align-items:center;margin-top:18px}.service-bottom strong{font-size:15px}.service-bottom a{width:35px;height:35px;border-radius:50%;background:var(--mint);display:grid;place-items:center;color:var(--green)}.calculator-section{background:#e9f0ea}.calc-layout{display:grid;grid-template-columns:1fr 1fr;gap:100px;align-items:center}.calc-layout>div:first-child>p,.about-grid>div:last-child>p,.faq-grid>div>p{color:var(--muted);line-height:1.9;max-width:470px}.calc-benefits{display:flex;flex-wrap:wrap;gap:16px;margin-top:40px;font-size:12px;font-weight:700;color:var(--green)}.calc-card{background:white;border-radius:20px;padding:36px;box-shadow:0 16px 60px #183a2b0b}.calc-card>label,.area-row label,.extra-label{display:block;font-size:13px;font-weight:800;margin-bottom:12px}.calc-card select{width:100%;padding:15px;border:1px solid var(--line);border-radius:10px;background:#fafbf9;margin-bottom:25px}.area-row{display:flex;justify-content:space-between}.area-row strong{color:var(--green)}input[type=range]{width:100%;accent-color:var(--green);cursor:pointer}.range-labels{display:flex;justify-content:space-between;font-size:11px;color:var(--muted);margin:5px 0 25px}.check{display:flex!important;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);margin:0!important;font-weight:500!important}.check input{accent-color:var(--green);width:17px;height:17px}.check span{flex:1;font-size:12px}.check b{font-size:12px}.total{border-top:1px solid var(--line);margin-top:25px;padding-top:24px;display:flex;flex-direction:column;gap:7px}.total span{font-size:12px;color:var(--muted)}.total strong{font-size:35px;color:var(--green);letter-spacing:-.05em}.total small,.calc-card small{color:var(--muted);font-size:10px;line-height:1.6}.full{width:100%;margin-top:22px}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:90px;align-items:center}.about-photo img{height:600px;border-radius:18px 180px 18px 18px}.features{margin-top:38px}.features>div{display:flex;gap:25px;border-top:1px solid var(--line);padding:19px 0}.features>div>span{font-weight:800;color:#79a08b}.features h3{margin:0 0 7px;font-size:17px}.features p{margin:0;font-size:13px;color:var(--muted);line-height:1.7}.comparison-section{background:var(--cream)}.comparison{position:relative;height:440px;border-radius:18px;overflow:hidden;user-select:none}.comparison img{height:100%;width:100%;object-fit:cover}.before-layer{position:absolute;inset:0;width:50%;overflow:hidden;filter:grayscale(.7) brightness(.73)}.before-layer img{width:calc(var(--comparison-width, 1160px));max-width:none;height:100%;object-fit:cover}.compare-line{position:absolute;left:50%;top:0;bottom:0;border-left:3px solid white;pointer-events:none}.compare-line span{position:absolute;top:50%;left:0;transform:translate(-50%,-50%);background:white;border-radius:50%;width:48px;height:48px;display:grid;place-items:center;box-shadow:0 3px 14px #0002;color:var(--green);font-size:22px}.comparison input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize}.compare-tag{position:absolute;top:22px;background:white;border-radius:20px;padding:8px 16px;font-size:12px;font-weight:800}.before-tag{left:22px}.after-tag{right:22px}.disclaimer{color:var(--muted);font-size:11px;line-height:1.7}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:30px;margin-top:50px}.steps>div{border-top:2px solid #b6cec0;padding-top:24px}.steps span{font-size:31px;color:#80a38f;font-weight:800}.steps h3{font-size:20px}.steps p{color:var(--muted);font-size:13px;line-height:1.8}.reviews-section{background:#f4f7f3}.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:45px}.reviews blockquote{margin:0;background:white;border-radius:16px;padding:32px;font-size:15px;line-height:1.9}.reviews footer{margin-top:28px;font-weight:800;font-size:13px}.reviews footer span{display:block;font-size:10px;font-weight:500;color:var(--muted)}.faq-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:90px}.faq-items details{border-bottom:1px solid var(--line);padding:22px 0}.faq-items summary{font-size:15px;font-weight:800;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:12px}.faq-items summary::after{content:'+';font-size:22px;color:#7a9e88}.faq-items details[open] summary::after{content:'−'}.faq-items p{font-size:13px;color:var(--muted);line-height:1.8}.contact-section{background:var(--green);color:white;padding:95px 0}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:90px;align-items:center}.contact-section .eyebrow{color:#b9d7c6}.contact-section h2{font-size:clamp(35px,4.5vw,58px)}.contact-section h2 em{color:#b5d5bf}.contact-section p{line-height:1.8;color:#d2e0d8}.contact-footnote{font-size:11px;color:#b5c8bd;margin-top:50px}.contact-section form{background:white;color:var(--ink);padding:36px;border-radius:18px;display:flex;flex-direction:column;gap:9px}.contact-section form label{font-size:12px;font-weight:800}.contact-section form input,.contact-section textarea{border:1px solid var(--line);border-radius:9px;padding:14px;margin-bottom:12px;resize:vertical}.contact-section form small{color:var(--muted);font-size:10px;line-height:1.7}.form-message{margin:0!important;font-size:12px;color:var(--green)!important}.footer{background:#19372f;color:white;padding:32px 0}.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:20px}.footer .logo{color:white}.footer p,.footer a:last-child{font-size:11px;color:#b6c8be}@media(max-width:1050px){.services-grid{grid-template-columns:repeat(2,1fr)}.calc-layout,.about-grid,.faq-grid,.contact-grid{gap:45px}.hero-visual img{height:470px}.hero-stats{gap:18px}}@media(max-width:760px){.container{padding:0 20px}.nav{height:66px}.logo{font-size:28px}.menu-toggle{display:block}nav{display:none;position:absolute;top:100%;left:0;right:0;background:white;padding:20px;box-shadow:0 15px 25px #0001;flex-direction:column;align-items:stretch;gap:20px}nav.open{display:flex}.hero-grid,.calc-layout,.about-grid,.faq-grid,.contact-grid{grid-template-columns:1fr;gap:32px}.hero-grid{padding-top:55px;padding-bottom:55px}.hero h1{font-size:clamp(42px,9vw,65px)}.hero-visual img{height:380px;border-radius:130px 130px 14px 14px}.floating-note{left:10px;bottom:12px;font-size:11px}.hero-stats{margin-top:40px;justify-content:space-between}.hero-stats strong{font-size:18px}.hero-stats span{font-size:10px}.section{padding:70px 0}.section-head{display:block}.section-head>p{max-width:100%}.services-grid{gap:14px}.service img{height:170px}.service-content{padding:17px}.service h3{font-size:17px}.about-photo img{height:380px;border-radius:15px 100px 15px 15px}.steps,.reviews{grid-template-columns:repeat(2,1fr)}.comparison{height:300px}.contact-section{padding:70px 0}.footer-inner{flex-wrap:wrap}}@media(max-width:480px){.services-grid,.steps,.reviews{grid-template-columns:1fr}.hero-actions{gap:18px;flex-wrap:wrap}.hero-visual img{height:300px}.hero-stats{gap:10px}.calc-card,.contact-section form{padding:23px}.comparison{height:230px}.footer-inner{flex-direction:column;align-items:start}.demo{font-size:9px}}
+
+/* CHISTO 1.1: polish, usability, accessibility */
+:root{--green:#25483e;--green-hover:#416f5e;--mint:#dce9e1;--cream:#f7f6f1;--ink:#26332e;--muted:#68736d}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:95px}
+body{min-width:280px;overflow-x:clip}
+.container,.hero-grid,.calc-layout,.contact-grid,.faq-grid,.about-grid,.hero-copy,.calc-card,.contact-grid>*,.calc-layout>*{min-width:0}
+.skip-link{position:absolute;top:-70px;left:16px;z-index:100;background:#fff;color:var(--green);padding:12px 16px;border:2px solid var(--green);border-radius:8px;font-weight:800}
+.skip-link:focus{top:12px}
+:where(a,button,input,select,textarea,summary):focus-visible{outline:3px solid #90b39f;outline-offset:3px}
+.btn,.nav-cta{box-shadow:0 8px 21px rgba(37,72,62,.09)}
+.service{background:#fff}.service img{transition:transform .45s ease}.service:hover img{transform:scale(1.035)}
+.service{isolation:isolate}.service img{position:relative;z-index:-1}
+.eyebrow{display:inline-block}
+.measure-helper{font-size:11px;line-height:1.5;color:var(--muted);margin:-12px 0 22px}
+.window-note{background:#f2f7f2;border:1px solid #dae9dc;padding:13px 15px;border-radius:12px;color:var(--green);font-size:12px;line-height:1.7;margin:6px 0}
+[hidden]{display:none!important}
+#extra-options[hidden]{display:none!important}
+.area-row strong{white-space:nowrap}
+.area-row label{min-width:0}
+.compare-line{z-index:3}
+.comparison{background:#dae1d3;isolation:isolate;touch-action:pan-y}
+.comparison .kitchen-scene{position:absolute;inset:0;display:block;width:100%;height:100%}
+.before-layer{position:absolute;top:0;bottom:0;left:0;right:auto;width:50%;overflow:hidden;filter:none}
+.before-layer .kitchen-scene{width:var(--comparison-width,1160px);max-width:none;height:100%;position:absolute;left:0;top:0}
+.comparison>.kitchen-scene{width:100%}
+.comparison input{z-index:4}
+.compare-tag{z-index:2;pointer-events:none}
+.comparison .compare-line span{font-weight:800}
+.disclaimer{margin-top:15px}
+.quote-summary{margin:27px 0 17px!important;padding:15px 18px;border-radius:12px;background:rgba(255,255,255,.10);color:white!important;font-size:13px;line-height:1.7}
+.contact-footnote{margin-top:20px}
+.contact-grid form{min-width:0}
+.contact-grid form :is(input,textarea,button){width:100%;min-width:0;max-width:100%}
+.contact-grid form input,.contact-grid form textarea{font-size:16px}
+.contact-grid form small{overflow-wrap:anywhere}
+.honeypot{position:absolute!important;left:-10000px!important;width:1px!important;height:1px!important;overflow:hidden!important;opacity:0!important}
+.form-message{min-height:0;overflow-wrap:anywhere}
+.form-message.error{color:#a43425!important}
+.form-message.ok{color:var(--green)!important}
+.contact-grid h2{overflow-wrap:break-word}
+@media(max-width:760px){.nav{position:relative}.menu-toggle{min-height:44px;min-width:44px;display:flex;align-items:center;justify-content:center}.hero-visual img{max-height:420px}.contact-grid{gap:26px}.contact-grid form{padding:24px!important}.contact-section h2{font-size:clamp(35px,7.6vw,52px)}.services-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:480px){.container{padding-inline:16px}.hero-grid{gap:35px}.hero h1{font-size:clamp(38px,10vw,52px)}.hero-actions{gap:17px}.hero-actions .btn{padding:15px 18px}.hero-stats{margin-top:32px}.hero-stats div{min-width:0}.hero-stats strong{font-size:17px}.services-grid,.steps,.reviews{grid-template-columns:minmax(0,1fr)}.service img{height:200px}.calc-card{padding:21px!important}.calc-card .check{gap:8px}.check span{font-size:12px;overflow-wrap:anywhere}.check b{white-space:nowrap}.comparison{height:255px}.contact-grid form{padding:19px!important}.contact-section h2{font-size:clamp(32px,9vw,43px)}.footer-inner{align-items:flex-start}}
+@media(max-width:350px){.hero-stats{flex-wrap:wrap}.hero-stats div{flex:1 1 30%}.hero-actions{align-items:stretch}.hero-actions .btn{width:100%}.comparison{height:210px}.section{padding-block:60px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important}}
+</style></head><body><a class="skip-link" href="#main-content">Перейти к содержимому</a><div class="demo">Демонстрационный проект для портфолио · Компания и отзывы вымышлены</div><header class="header"><div class="container nav"><a class="logo" href="#home">чисто<span>.</span></a><button aria-controls="nav" aria-expanded="false" aria-label="Открыть меню" class="menu-toggle" type="button">☰</button><nav id="nav"><a href="#services">Услуги</a><a href="#calculator">Стоимость</a><a href="#about">О нас</a><a href="#faq">Вопросы</a><a class="nav-cta" href="#contact">Оставить заявку ↗</a></nav></div></header><main id="main-content"><section class="hero" id="home"><div class="container hero-grid"><div class="hero-copy"><span class="eyebrow">КЛИНИНГ С ЗАБОТОЙ О ВАШЕМ ДОМЕ</span><h1>Чистый дом.<br/><em>Свободное время.</em></h1><p>Профессиональная уборка квартир и домов. Мы берём заботы о чистоте на себя, чтобы у вас оставалось больше времени на важное.</p><div class="hero-actions"><a class="btn" href="#calculator">Рассчитать стоимость <span>↗</span></a><a class="text-link" href="#services">Наши услуги ↗</a></div><div class="hero-stats"><div><strong>4 вида</strong><span>уборки</span></div><div><strong>0 ₽</strong><span>доплат по демо-тарифам</span></div><div><strong>100%</strong><span>внимания к деталям</span></div></div></div><div class="hero-visual"><img alt="Светлая уютная гостиная с современным интерьером" decoding="async" fetchpriority="high" src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&amp;fit=crop&amp;w=1400&amp;q=85"/><div class="floating-note">✦   Дома хорошо, когда чисто</div></div></div></section><section class="section" id="services"><div class="container"><div class="section-head"><div><span class="eyebrow">ЧТО МЫ ДЕЛАЕМ</span><h2>Чистота под ваш <em>ритм жизни</em></h2></div><p>От регулярного поддержания порядка до тщательной уборки после ремонта.</p></div><div class="services-grid"><article class="service"><img alt="Специалист убирает комнату" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&amp;fit=crop&amp;w=900&amp;q=80"/><div class="service-content"><span>01 / ЕЖЕДНЕВНЫЙ КОМФОРТ</span><h3>Поддерживающая уборка</h3><p>Свежесть и порядок без хлопот.</p><div class="service-bottom"><strong>от 2 500 ₽</strong><a aria-label="Рассчитать поддерживающую уборку" data-type="regular" href="#calculator" title="Перейти к расчёту стоимости">↗</a></div></div></article><article class="service"><img alt="Чистый современный дом" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&amp;fit=crop&amp;w=900&amp;q=80"/><div class="service-content"><span>02 / ГЛУБОКАЯ ЧИСТОТА</span><h3>Генеральная уборка</h3><p>Особое внимание каждому уголку.</p><div class="service-bottom"><strong>от 4 500 ₽</strong><a aria-label="Рассчитать генеральную уборку" data-type="deep" href="#calculator" title="Перейти к расчёту стоимости">↗</a></div></div></article><article class="service"><img alt="Светлая квартира после ремонта" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&amp;fit=crop&amp;w=900&amp;q=80"/><div class="service-content"><span>03 / НОВОЕ НАЧАЛО</span><h3>После ремонта</h3><p>Уберём строительную пыль и следы работ.</p><div class="service-bottom"><strong>от 6 000 ₽</strong><a aria-label="Рассчитать уборку после ремонта" data-type="repair" href="#calculator" title="Перейти к расчёту стоимости">↗</a></div></div></article><article class="service"><img alt="Светлое помещение с большими окнами" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&amp;fit=crop&amp;w=900&amp;q=80"/><div class="service-content"><span>04 / БОЛЬШЕ СВЕТА</span><h3>Мойка окон</h3><p>Прозрачные стёкла и сияющие рамы.</p><div class="service-bottom"><strong>от 1 200 ₽</strong><a aria-label="Рассчитать мойку окон" data-type="windows" href="#calculator" title="Перейти к расчёту стоимости">↗</a></div></div></article></div></div></section><section class="section calculator-section" id="calculator"><div class="container calc-layout"><div><span class="eyebrow">ПРОЗРАЧНЫЕ ЦЕНЫ</span><h2>Узнайте стоимость <em>за минуту</em></h2><p>Выберите параметры — калькулятор сразу покажет ориентировочную стоимость.</p><div class="calc-benefits"><span>✓ Без регистрации</span><span>✓ Мгновенный расчёт</span><span>✓ Никаких обязательств</span></div></div><div class="calc-card"><label for="type">Тип уборки</label><select id="type"><option value="regular">Поддерживающая</option><option value="deep">Генеральная</option><option value="repair">После ремонта</option><option value="windows">Мойка окон</option></select><div class="area-row"><label for="area" id="measure-label">Площадь помещения</label><strong><output for="area" id="area-value">50</output><span id="measure-unit"> м²</span></strong></div><input aria-label="Площадь помещения в квадратных метрах" id="area" max="200" min="20" step="5" type="range" value="50"/><div class="range-labels"><span id="range-min">20 м²</span><span id="range-max">200 м²</span></div><p class="measure-helper" id="measure-helper">Передвиньте ползунок, чтобы указать площадь.</p><div class="extra-options" id="extra-options"><p class="extra-label">Дополнительные услуги</p><label class="check"><input class="extra" type="checkbox" value="700"/><span>Мытьё холодильника</span><b>+700 ₽</b></label><label class="check"><input class="extra" type="checkbox" value="600"/><span>Мытьё духовки</span><b>+600 ₽</b></label><label class="check"><input class="extra" type="checkbox" value="500"/><span>Внутри кухонных шкафов</span><b>+500 ₽</b></label></div><p class="window-note" hidden="" id="window-note">Стоимость мойки окон рассчитывается по количеству окон. Дополнительные услуги относятся к уборке помещений.</p><div class="total"><span>Ориентировочная стоимость</span><strong aria-live="polite" id="total-price">3 500 ₽</strong><small>* Примерные демонстрационные тарифы, не публичная оферта.</small></div><a class="btn full" href="#contact">Перейти к заявке ↗</a></div></div></section><section class="section" id="about"><div class="container about-grid"><div class="about-photo"><img alt="Светлый интерьер с натуральными материалами" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&amp;fit=crop&amp;w=1100&amp;q=85"/></div><div><span class="eyebrow">НАШ ПОДХОД</span><h2>Чистота, которую <em>чувствуешь</em></h2><p>Мы верим, что уборка — это не просто услуга, а возможность сделать повседневную жизнь легче и приятнее.</p><div class="features"><div><span>01</span><div><h3>Бережное отношение</h3><p>Внимание к поверхностям, вещам и деталям вашего дома.</p></div></div><div><span>02</span><div><h3>Понятные условия</h3><p>Согласовываем объём работ и стоимость заранее.</p></div></div><div><span>03</span><div><h3>Удобный график</h3><p>Выбирайте время, которое подходит именно вам.</p></div></div></div></div></div></section><section class="section comparison-section"><div class="container"><div class="section-head"><div><span class="eyebrow">ВИДИМЫЙ РЕЗУЛЬТАТ</span><h2>Разница <em>в деталях</em></h2></div><p>Передвиньте ползунок и посмотрите, как меняется интерьер.</p></div><div class="comparison" id="comparison"><svg aria-label="Та же кухня после уборки, иллюстрация" class="kitchen-scene" preserveaspectratio="xMidYMid slice" role="img" viewbox="0 0 1200 650" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<lineargradient id="wall" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#e8e7dc"></stop><stop offset="1" stop-color="#c9d4c5"></stop></lineargradient>
+<lineargradient id="counter" x1="0" x2=".7" y1="0" y2="1"><stop stop-color="#e9e4d9"></stop><stop offset="1" stop-color="#b7b1a6"></stop></lineargradient>
+<lineargradient id="cab" x1="0" x2="1"><stop stop-color="#9b8c72"></stop><stop offset="1" stop-color="#c3b69d"></stop></lineargradient>
+<lineargradient id="glass" x1="0" x2="1"><stop stop-color="#c9deda"></stop><stop offset="1" stop-color="#a5c3af"></stop></lineargradient>
+<filter id="soft"><fegaussianblur stddeviation="13"></fegaussianblur></filter>
+<filter id="shadow"><fedropshadow dx="0" dy="8" flood-opacity=".14" stddeviation="10"></fedropshadow></filter>
+</defs>
+<rect fill="url(#wall)" height="650" width="1200"></rect>
+<path d="M0 0h1200v263H0z" fill="#f0eee5" opacity=".57"></path>
+<rect fill="#c8c7b7" height="278" rx="9" width="480" x="75" y="25"></rect>
+<rect fill="url(#glass)" height="250" width="448" x="91" y="38"></rect>
+<g filter="url(#soft)" opacity=".45"><ellipse cx="210" cy="130" fill="#5e936c" rx="83" ry="112"></ellipse><ellipse cx="431" cy="107" fill="#598768" rx="123" ry="117"></ellipse><ellipse cx="344" cy="207" fill="#9fba80" rx="72" ry="96"></ellipse></g>
+<g stroke="#e1ded1" stroke-width="13"><path d="M317 42v246"></path><path d="M91 172h448"></path></g>
+<path d="M57 313h530" opacity=".6" stroke="#a6a797" stroke-width="12"></path>
+<rect fill="url(#cab)" height="176" rx="10" width="494" x="623" y="37"></rect>
+<g opacity=".5" stroke="#827962" stroke-width="5"><path d="M785 40v171M948 40v171"></path></g>
+<g fill="#c8c5b3"><rect height="42" rx="3" width="6" x="756" y="111"></rect><rect height="42" rx="3" width="6" x="925" y="111"></rect><rect height="42" rx="3" width="6" x="1084" y="111"></rect></g>
+<rect fill="#d9d9cb" height="180" width="640" x="560" y="223"></rect>
+<g opacity=".8" stroke="#f4f0e6" stroke-width="3"><path d="M560 266h640m-640 47h640m-640 47h640"></path><path d="M678 223v180m118-180v180m118-180v180m118-180v180"></path></g>
+<rect fill="url(#counter)" height="194" width="1200" x="0" y="408"></rect>
+<path d="M0 408h1200" stroke="#eee9de" stroke-width="20"></path>
+<rect fill="#b3a188" height="143" width="1200" x="0" y="508"></rect>
+<g opacity=".65" stroke="#8e806c" stroke-width="5"><path d="M270 508v142m310-142v142m310-142v142"></path></g>
+<g fill="#ddd6c8"><rect height="34" rx="4" width="9" x="235" y="563"></rect><rect height="34" rx="4" width="9" x="550" y="563"></rect><rect height="34" rx="4" width="9" x="863" y="563"></rect></g>
+<ellipse cx="390" cy="443" fill="#343b37" filter="url(#shadow)" rx="109" ry="52"></ellipse>
+<ellipse cx="390" cy="438" fill="#616660" rx="87" ry="34"></ellipse>
+<ellipse cx="390" cy="438" fill="#292f2c" rx="55" ry="19"></ellipse>
+<rect fill="none" height="96" rx="10" stroke="#454e4a" stroke-width="12" width="249" x="272" y="395"></rect>
+<path d="M313 415l158 51m0-51l-158 51" stroke="#565e59" stroke-width="13"></path>
+<ellipse cx="1014" cy="436" fill="#858e88" rx="121" ry="47"></ellipse>
+<ellipse cx="1014" cy="427" fill="#d4dcd8" rx="108" ry="33"></ellipse>
+<path d="M1006 416v-92q0-44 42-44t42 46" fill="none" stroke="#889b96" stroke-linecap="round" stroke-width="18"></path>
+<rect fill="#8c9f99" height="14" rx="5" width="32" x="1059" y="305"></rect>
+<rect fill="#9c8a74" height="50" opacity=".75" width="1200" x="0" y="600"></rect>
+<g opacity=".96">
+<ellipse cx="595" cy="415" fill="#f8f7f0" rx="56" ry="16" stroke="#bbb8aa" stroke-width="3"></ellipse>
+<ellipse cx="595" cy="410" fill="#fdfcf7" rx="41" ry="9"></ellipse>
+<rect fill="#e8e2d3" height="51" rx="6" width="30" x="814" y="390"></rect>
+<path d="M828 391q-25-25-22-47m22 48q19-35 34-44m-34 42q0-38 0-56" fill="none" stroke="#678e6b" stroke-linecap="round" stroke-width="8"></path>
+<path d="M807 347q-22-11-24-25m53 17q17-17 22-16" fill="none" stroke="#8aab80" stroke-linecap="round" stroke-width="8"></path>
+</g>
+<rect fill="#e4f7e9" height="650" opacity=".07" width="1200" x="0" y="0"></rect>
+</svg><div class="before-layer" id="before-layer"><svg aria-label="Кухня до уборки, иллюстрация" class="kitchen-scene" preserveaspectratio="xMidYMid slice" role="img" viewbox="0 0 1200 650" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<lineargradient id="wall" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#e8e7dc"></stop><stop offset="1" stop-color="#c9d4c5"></stop></lineargradient>
+<lineargradient id="counter" x1="0" x2=".7" y1="0" y2="1"><stop stop-color="#e9e4d9"></stop><stop offset="1" stop-color="#b7b1a6"></stop></lineargradient>
+<lineargradient id="cab" x1="0" x2="1"><stop stop-color="#9b8c72"></stop><stop offset="1" stop-color="#c3b69d"></stop></lineargradient>
+<lineargradient id="glass" x1="0" x2="1"><stop stop-color="#c9deda"></stop><stop offset="1" stop-color="#a5c3af"></stop></lineargradient>
+<filter id="soft"><fegaussianblur stddeviation="13"></fegaussianblur></filter>
+<filter id="shadow"><fedropshadow dx="0" dy="8" flood-opacity=".14" stddeviation="10"></fedropshadow></filter>
+</defs>
+<rect fill="url(#wall)" height="650" width="1200"></rect>
+<path d="M0 0h1200v263H0z" fill="#f0eee5" opacity=".57"></path>
+<rect fill="#c8c7b7" height="278" rx="9" width="480" x="75" y="25"></rect>
+<rect fill="url(#glass)" height="250" width="448" x="91" y="38"></rect>
+<g filter="url(#soft)" opacity=".45"><ellipse cx="210" cy="130" fill="#5e936c" rx="83" ry="112"></ellipse><ellipse cx="431" cy="107" fill="#598768" rx="123" ry="117"></ellipse><ellipse cx="344" cy="207" fill="#9fba80" rx="72" ry="96"></ellipse></g>
+<g stroke="#e1ded1" stroke-width="13"><path d="M317 42v246"></path><path d="M91 172h448"></path></g>
+<path d="M57 313h530" opacity=".6" stroke="#a6a797" stroke-width="12"></path>
+<rect fill="url(#cab)" height="176" rx="10" width="494" x="623" y="37"></rect>
+<g opacity=".5" stroke="#827962" stroke-width="5"><path d="M785 40v171M948 40v171"></path></g>
+<g fill="#c8c5b3"><rect height="42" rx="3" width="6" x="756" y="111"></rect><rect height="42" rx="3" width="6" x="925" y="111"></rect><rect height="42" rx="3" width="6" x="1084" y="111"></rect></g>
+<rect fill="#d9d9cb" height="180" width="640" x="560" y="223"></rect>
+<g opacity=".8" stroke="#f4f0e6" stroke-width="3"><path d="M560 266h640m-640 47h640m-640 47h640"></path><path d="M678 223v180m118-180v180m118-180v180m118-180v180"></path></g>
+<rect fill="url(#counter)" height="194" width="1200" x="0" y="408"></rect>
+<path d="M0 408h1200" stroke="#eee9de" stroke-width="20"></path>
+<rect fill="#b3a188" height="143" width="1200" x="0" y="508"></rect>
+<g opacity=".65" stroke="#8e806c" stroke-width="5"><path d="M270 508v142m310-142v142m310-142v142"></path></g>
+<g fill="#ddd6c8"><rect height="34" rx="4" width="9" x="235" y="563"></rect><rect height="34" rx="4" width="9" x="550" y="563"></rect><rect height="34" rx="4" width="9" x="863" y="563"></rect></g>
+<ellipse cx="390" cy="443" fill="#343b37" filter="url(#shadow)" rx="109" ry="52"></ellipse>
+<ellipse cx="390" cy="438" fill="#616660" rx="87" ry="34"></ellipse>
+<ellipse cx="390" cy="438" fill="#292f2c" rx="55" ry="19"></ellipse>
+<rect fill="none" height="96" rx="10" stroke="#454e4a" stroke-width="12" width="249" x="272" y="395"></rect>
+<path d="M313 415l158 51m0-51l-158 51" stroke="#565e59" stroke-width="13"></path>
+<ellipse cx="1014" cy="436" fill="#858e88" rx="121" ry="47"></ellipse>
+<ellipse cx="1014" cy="427" fill="#d4dcd8" rx="108" ry="33"></ellipse>
+<path d="M1006 416v-92q0-44 42-44t42 46" fill="none" stroke="#889b96" stroke-linecap="round" stroke-width="18"></path>
+<rect fill="#8c9f99" height="14" rx="5" width="32" x="1059" y="305"></rect>
+<rect fill="#9c8a74" height="50" opacity=".75" width="1200" x="0" y="600"></rect>
+<g opacity=".97">
+<ellipse cx="540" cy="442" fill="#9b8978" opacity=".22" rx="112" ry="27"></ellipse>
+<path d="M430 417 Q450 382 493 395 L514 433 Q490 457 444 438Z" fill="#c6a68d"></path>
+<path d="M453 410 Q473 382 493 412" fill="none" stroke="#ad7360" stroke-linecap="round" stroke-width="9"></path>
+<ellipse cx="600" cy="413" fill="#ece4da" rx="61" ry="19" stroke="#a69f91" stroke-width="4"></ellipse>
+<ellipse cx="607" cy="408" fill="#bdae97" opacity=".55" rx="48" ry="11"></ellipse>
+<path d="M566 401 Q595 363 620 394" fill="none" stroke="#a47b63" stroke-width="10"></path>
+<rect fill="#d2bb88" height="63" rx="4" width="27" x="752" y="382"></rect>
+<rect fill="#4d796e" height="13" rx="4" width="19" x="756" y="373"></rect>
+<ellipse cx="801" cy="430" fill="#f2f1e8" rx="36" ry="17"></ellipse>
+<path d="M788 423q12-25 29-4" fill="none" stroke="#aa8963" stroke-width="7"></path>
+<g fill="#9c7547" opacity=".83"><circle cx="299" cy="455" r="7"></circle><circle cx="326" cy="443" r="5"></circle><circle cx="700" cy="478" r="6"></circle><ellipse cx="887" cy="454" rx="14" ry="6"></ellipse><circle cx="661" cy="435" r="4"></circle></g>
+<g opacity=".68" stroke="#c2a27c" stroke-linecap="round" stroke-width="9"><path d="M382 456l18 4"></path><path d="M851 475l28 7"></path><path d="M712 447l22 9"></path></g>
+<path d="M275 499q100-35 181 4" fill="none" opacity=".25" stroke="#c2a588" stroke-width="19"></path>
+<rect fill="#dbc39b" height="39" rx="7" transform="rotate(-7 104 422)" width="107" x="104" y="422"></rect>
+<path d="M124 429q20-14 42 10" fill="none" stroke="#9a876b" stroke-width="7"></path>
+</g>
+<rect fill="#8a7050" height="650" opacity=".08" width="1200" x="0" y="0"></rect>
+</svg></div><span class="compare-tag before-tag">До</span><span class="compare-tag after-tag">После</span><div class="compare-line" id="compare-line"><span>↔</span></div><input aria-label="Передвиньте ползунок: до или после уборки" id="compare-range" max="100" min="0" type="range" value="50"/></div><p class="disclaimer">Иллюстративная демонстрация «до / после» (не фотографии реальных заказов). Для сайта клиента используются только его собственные материалы с разрешения.</p></div></section><section class="section steps-section"><div class="container"><span class="eyebrow">ВСЁ ПРОСТО</span><h2>Четыре шага к <em>чистоте</em></h2><div class="steps"><div><span>01</span><h3>Заявка</h3><p>Вы оставляете контакты и рассказываете о задаче.</p></div><div><span>02</span><h3>Расчёт</h3><p>Уточняем детали и согласовываем стоимость.</p></div><div><span>03</span><h3>Уборка</h3><p>Специалисты приводят пространство в порядок.</p></div><div><span>04</span><h3>Результат</h3><p>Вы наслаждаетесь чистотой и свободным временем.</p></div></div></div></section><section class="section reviews-section"><div class="container"><span class="eyebrow">ПРИМЕР ОФОРМЛЕНИЯ ОТЗЫВОВ</span><h2>Тёплые слова <em>о чистоте</em></h2><div class="reviews"><blockquote>«Очень приятно возвращаться в дом, где всё на своих местах. Именно такой результат и хотелось получить.»<footer>Анна М. <span>· Демонстрационный отзыв</span></footer></blockquote><blockquote>«Понравилось, что всё понятно: какие работы входят в уборку и сколько это стоит.»<footer>Михаил К. <span>· Демонстрационный отзыв</span></footer></blockquote><blockquote>«Удобный сервис, приятный дизайн и быстрый расчёт — именно то, что нужно занятому человеку.»<footer>Елена С. <span>· Демонстрационный отзыв</span></footer></blockquote></div></div></section><section class="section faq-section" id="faq"><div class="container faq-grid"><div><span class="eyebrow">ЧАСТЫЕ ВОПРОСЫ</span><h2>Ответы на <em>важное</em></h2><p>Всё, что стоит знать перед заказом уборки.</p></div><div class="faq-items"><details><summary>Нужно ли предоставлять средства для уборки?</summary><p>В демонстрационной модели предполагается, что специалисты приезжают со своими средствами и инвентарём.</p></details><details><summary>Как рассчитывается окончательная цена?</summary><p>Стоимость зависит от площади, вида уборки и дополнительных услуг. Итоговая сумма согласовывается до начала работ.</p></details><details><summary>Можно ли заказать уборку на выходные?</summary><p>Да, в примере сервиса предусмотрена запись на удобный день, включая выходные.</p></details><details><summary>Нужно ли присутствовать во время уборки?</summary><p>Условия доступа к помещению согласовываются индивидуально.</p></details></div></div></section><section class="contact-section" id="contact"><div class="container contact-grid"><div><span class="eyebrow">ВАШ ДОМ ЗАСЛУЖИВАЕТ ЗАБОТЫ</span><h2>Пусть дома будет <em>легко дышать</em></h2><p>Оставьте заявку — мы покажем, как выглядит удобный процесс оформления заказа.</p><p aria-live="polite" class="quote-summary" id="quote-summary">Ваш расчёт: поддерживающая уборка, 50 м² — 3 500 ₽</p><div class="contact-footnote">Демонстрационный сайт · Контактные данные не передаются компании</div></div><form data-demo="true" id="contact-form" novalidate=""><label for="name">Ваше имя</label><input autocomplete="name" id="name" maxlength="80" minlength="2" name="name" placeholder="Как к вам обращаться?" required=""/><label for="phone">Телефон или email</label><input autocomplete="email" id="phone" inputmode="text" maxlength="120" name="contact" placeholder="Контакт для связи" required=""/><label for="message">Комментарий</label><textarea id="message" maxlength="600" name="message" placeholder="Расскажите, какая уборка вам нужна" rows="3"></textarea><div aria-hidden="true" class="honeypot"><label for="website">Ваш веб-сайт (не заполняйте)</label><input autocomplete="off" id="website" name="website" tabindex="-1"/></div><button class="btn full" type="submit">Проверить заявку ↗</button><p aria-live="polite" class="form-message" id="form-message" role="status"></p><small>Демонстрация: данные не сохраняются и не отправляются. Для настоящего бизнеса подключается защищённый приём заявок.</small></form></div></section></main><footer class="footer"><div class="container footer-inner"><a class="logo" href="#home">чисто<span>.</span></a><p>Демонстрационный проект веб-разработки · 2026</p><a href="#home">Наверх ↑</a></div></footer><script>/* ЧИСТО. v1.1 — no dependencies */
+'use strict';
+const menuButton = document.querySelector('.menu-toggle');
+const nav = document.querySelector('#nav');
+const closeMenu = () => {
+  nav.classList.remove('open');
+  menuButton.setAttribute('aria-expanded', 'false');
+  menuButton.textContent = '☰';
+  menuButton.setAttribute('aria-label', 'Открыть меню');
+};
+menuButton.addEventListener('click', () => {
+  const open = nav.classList.toggle('open');
+  menuButton.setAttribute('aria-expanded', String(open));
+  menuButton.setAttribute('aria-label', open ? 'Закрыть меню' : 'Открыть меню');
+  menuButton.textContent = open ? '✕' : '☰';
+});
+nav.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
+
+const type = document.querySelector('#type');
+const measure = document.querySelector('#area');
+const measureValue = document.querySelector('#area-value');
+const unit = document.querySelector('#measure-unit');
+const measureLabel = document.querySelector('#measure-label');
+const measureHelper = document.querySelector('#measure-helper');
+const rangeMin = document.querySelector('#range-min');
+const rangeMax = document.querySelector('#range-max');
+const price = document.querySelector('#total-price');
+const extras = [...document.querySelectorAll('.extra')];
+const extraOptions = document.querySelector('#extra-options');
+const windowNote = document.querySelector('#window-note');
+const quoteSummary = document.querySelector('#quote-summary');
+const tariffs = {
+  regular: { label: 'поддерживающая уборка', rate: 70, min: 2500 },
+  deep: { label: 'генеральная уборка', rate: 110, min: 4500 },
+  repair: { label: 'уборка после ремонта', rate: 150, min: 6000 },
+  windows: { label: 'мойка окон', rate: 450, min: 1200 }
+};
+const money = n => new Intl.NumberFormat('ru-RU').format(n) + ' ₽';
+const prevMeasure = { area: 50, windows: 4 };
+let previousType = type.value;
+let currentQuote = '';
+function setMeasureMode() {
+  const isWindows = type.value === 'windows';
+  if (previousType !== type.value) {
+    if (previousType === 'windows') prevMeasure.windows = Number(measure.value);
+    else prevMeasure.area = Number(measure.value);
+  }
+  const min = isWindows ? 1 : 20;
+  const max = isWindows ? 20 : 200;
+  const step = isWindows ? 1 : 5;
+  measure.min = min;
+  measure.max = max;
+  measure.step = step;
+  measure.value = isWindows ? prevMeasure.windows : prevMeasure.area;
+  measureLabel.textContent = isWindows ? 'Количество окон' : 'Площадь помещения';
+  measure.setAttribute('aria-label', isWindows ? 'Количество окон' : 'Площадь помещения в квадратных метрах');
+  measureHelper.textContent = isWindows ? 'Считаем по количеству стандартных окон.' : 'Передвиньте ползунок, чтобы указать площадь.';
+  rangeMin.textContent = isWindows ? '1 окно' : '20 м²';
+  rangeMax.textContent = isWindows ? '20 окон' : '200 м²';
+  unit.textContent = isWindows ? ' шт.' : ' м²';
+  extraOptions.hidden = isWindows;
+  windowNote.hidden = !isWindows;
+  previousType = type.value;
+  calculate();
+}
+function calculate() {
+  const isWindows = type.value === 'windows';
+  const count = Number(measure.value);
+  const t = tariffs[type.value];
+  measureValue.textContent = count;
+  const addons = isWindows ? 0 : extras.filter(x => x.checked).reduce((n, x) => n + Number(x.value), 0);
+  const total = Math.max(t.min, count * t.rate) + addons;
+  price.textContent = money(total);
+  const measureText = isWindows ? `${count} ${count === 1 ? 'окно' : (count < 5 ? 'окна' : 'окон')}` : `${count} м²`;
+  currentQuote = `${t.label}, ${measureText} — ${money(total)}`;
+  quoteSummary.textContent = `Ваш расчёт: ${currentQuote}`;
+  if (isWindows) prevMeasure.windows = count; else prevMeasure.area = count;
+}
+type.addEventListener('change', setMeasureMode);
+measure.addEventListener('input', calculate);
+extras.forEach(x => x.addEventListener('change', calculate));
+document.querySelectorAll('.service a[data-type]').forEach(a => a.addEventListener('click', () => {
+  type.value = a.dataset.type;
+  setMeasureMode();
+}));
+setMeasureMode();
+
+const comparison = document.querySelector('#comparison');
+const before = document.querySelector('#before-layer');
+const line = document.querySelector('#compare-line');
+const range = document.querySelector('#compare-range');
+function resizeComparison() {
+  comparison.style.setProperty('--comparison-width', comparison.clientWidth + 'px');
+}
+function updateComparison() {
+  before.style.width = range.value + '%';
+  line.style.left = range.value + '%';
+  range.setAttribute('aria-valuetext', `Видно ${range.value}% иллюстрации до уборки`);
+}
+window.addEventListener('resize', resizeComparison, {passive: true});
+resizeComparison();
+range.addEventListener('input', updateComparison);
+updateComparison();
+
+// Production setup: provide a verified endpoint and a privacy policy before accepting live leads.
+// Leave empty for the portfolio demo: visitors' personal information is not transmitted or stored.
+const FORM_ENDPOINT = '';
+const form = document.querySelector('#contact-form');
+const formMessage = document.querySelector('#form-message');
+function setFormMessage(message, kind) {
+  formMessage.textContent = message;
+  formMessage.className = 'form-message ' + (kind || '');
+}
+function validContact(value) {
+  const email = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+  const phone = /^\+?[\d\s()\-]{7,25}$/;
+  return email.test(value) || (phone.test(value) && value.replace(/\D/g, '').length >= 7);
+}
+form.addEventListener('submit', async event => {
+  event.preventDefault();
+  const name = form.elements.name.value.trim();
+  const contact = form.elements.contact.value.trim();
+  const message = form.elements.message.value.trim();
+  if (form.elements.website.value) return; // Honeypot; no network request.
+  if (name.length < 2) {
+    setFormMessage('Пожалуйста, укажите имя (не менее 2 символов).', 'error');
+    form.elements.name.focus();
+    return;
+  }
+  if (!validContact(contact)) {
+    setFormMessage('Введите корректный email или номер телефона (от 7 цифр).', 'error');
+    form.elements.contact.focus();
+    return;
+  }
+  if (!FORM_ENDPOINT) {
+    setFormMessage(`Демо-проверка пройдена! Пример заявки: ${currentQuote}. Данные никуда не отправлены.`, 'ok');
+    form.reset();
+    return;
+  }
+  const btn = form.querySelector('[type="submit"]');
+  const original = btn.textContent;
+  btn.disabled = true;
+  btn.textContent = 'Отправляем…';
+  setFormMessage('Проверяем отправку…', '');
+  try {
+    const response = await fetch(FORM_ENDPOINT, {
+      method: 'POST',
+      headers: {'Accept': 'application/json', 'Content-Type': 'application/json'},
+      body: JSON.stringify({name, contact, message, estimate: currentQuote})
+    });
+    if (!response.ok) throw new Error('Failed submission');
+    setFormMessage('Заявка отправлена. Мы свяжемся с вами!', 'ok');
+    form.reset();
+  } catch {
+    setFormMessage('Не удалось отправить заявку. Пожалуйста, попробуйте позднее.', 'error');
+  } finally {
+    btn.disabled = false;
+    btn.textContent = original;
+  }
+});
+</script></body></html>
